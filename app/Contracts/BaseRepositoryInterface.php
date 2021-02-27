@@ -32,9 +32,9 @@ interface BaseRepositoryInterface
     /**
      * Store a newly created resource in storage.
      * @param  array $attributes
-     * @return boolean
+     * @return bool
      */
-    public function createMany(array $attributes);
+    public function createMany(array $attributes): bool;
 
     /**
      * Update the specified resource in storage.

@@ -58,9 +58,9 @@ class BaseRepository implements BaseRepositoryInterface
     /**
      * Store a newly created resource in storage.
      * @param  array $attributes
-     * @return boolean
+     * @return bool
      */
-    public function createMany(array $attributes)
+    public function createMany(array $attributes): bool
     {
         return $this->model->insert($attributes);
     }
